@@ -7,7 +7,7 @@ Market and financial information include:
    * End of the day price range (OHLC)
     * Intraday price
     
-2. uarterly financial statements sourced from CNBV Mexico's SEC (2017Q1 forward)
+2. Quarterly financial statements sourced from CNBV Mexico's SEC (2017Q1 forward)
     * Balance Sheet
    * Income Statement
     * Cash Flow Statement
@@ -77,7 +77,7 @@ ac.head()
 ![ac_balac_s](https://drive.google.com/uc?export=view&id=1Vlh2wkJ-2a5MsTQfgdMMvdDWcgQVhVC2)
 
 #### Income Statement
-pload WALMEX income statement for 2019Q3 and 2020Q3. The active instance, if there is one, can be used.
+Upload WALMEX income statement for 2019Q3 and 2020Q3. The active instance, if there is one, can be used.
 ```python
 walmex = data.income('walmex', ['2019-09-30', '2020-09-30'])
 walmex.head()
