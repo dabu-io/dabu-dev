@@ -1,7 +1,7 @@
 # dabu
 
 ## English
-dabu is a python packagethat pulls information from the enlisted stocks on the Mexican Stock Exchange (a.k.a. BOLSA).<br><br>
+dabu is a python package that pulls information from the enlisted stocks on the Mexican Stock Exchange (a.k.a. BOLSA).<br><br>
 Market and financial information include:
 1. Market price (From Yahoo!Finance)
    * End of the day price range (OHLC)
