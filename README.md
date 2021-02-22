@@ -18,14 +18,10 @@ Market and financial information include:
 pip3 install dabu
 ```
 ### Dependecies
-* [Python 3.x](https://www.python.org) 
+* [Python >=3.6](https://www.python.org) 
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
 * [Requests](https://2.python-requests.org/en/master/)
 
-#### Tested with the following versions
-* Python 3.9.1
-* Pandas 1.2.0
-* Requests 2.25.1
 ### Usage example
 
 #### Importing library
@@ -117,7 +113,7 @@ dabu is distribuited under the BSD 3-Clause License.  See the [LICENSE.txt](http
 
 Hope this package is usefull to you.  Please drop me a line with any sugestion, question or just to say hello!
 
-Carlos Crespo
+Carlos Crespo (carlos@dabu.io)
 
 ## Español
 dabu es un paquete de python enfocado en obtener infomación bursátil de las emisoras enlistadas en la Bolsa Mexicana de Valores.  En esta
