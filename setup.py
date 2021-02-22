@@ -25,7 +25,7 @@ setup(
     author_email='carlos@dabu.com',
     license='BSD 3',
     classifiers=classifiers,
-    keywords='bmv, Bolsa Mexicana de Valores, Analisis fundamental, Precios de cierre'
+    keywords='bmv, Bolsa Mexicana de Valores, Analisis fundamental, Precios de cierre',
     packages=['dabu'],
     install_requires=["pandas", "requests"]
 )
