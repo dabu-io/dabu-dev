@@ -209,8 +209,8 @@ walmex_cf.head()
 Hasta este punto, solamente hemos comparado un estado financiero contra diferentes trimestres de una misma emisora.
 También podemos comprar varias emisoras en un estado financiero utilizando el método `comparar`.
 ```python
-income = datos.comparar( 'flujos', '2020-09-30',['walmex', 'ac', 'femsa', 'cemex'])
-income.head()
+ingresos = datos.comparar( 'flujos', '2020-09-30',['walmex', 'ac', 'femsa', 'cemex'])
+ingresos.head()
 ```
 
 ![comparar](https://drive.google.com/uc?export=view&id=1yic73CldxtfvAvE0VAbEGXv2M3wWGBE_)
@@ -229,5 +229,5 @@ Recuerda que puedes utilizar todas las funcionalidades de pandas para:
 ### Legal
 dabu es distribuido bajo la licencia BSD 3-Clause.  Lee el archivo [LICENSE.txt](http://bit.ly/dabu_license) para mayor información.
 
-Espero que este paquete te sea útil.  Porfavor escribeme cualquier sugerencia, pregunta o simplemente si quieres saludar!<br>
+Espero que este paquete te sea útil.  Porfavor escribeme cualquier sugerencia, pregunta o simplemente si quieres saludar a carlos@dabu.digital!<br>
 **Carlos Crespo**
