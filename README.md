@@ -1,24 +1,24 @@
 # dabu
 
-## English
+<!-- ## English
 dabu is a python package that pulls information from the enlisted stocks on the Mexican Stock Exchange (a.k.a. BOLSA).<br><br>
 Market and financial information include:
 1. Market price (From Yahoo!Finance)
 * End of the day price range (OHLC)
 * Intraday price
-    
+
 2. Quarterly financial statements sourced from CNBV Mexico's SEC (2017Q1 forward)
 * Balance Sheet
 * Income Statement
 * Cash Flow Statement
-    
+
 
 ### Instalation
 ```
 pip3 install dabu
 ```
 ### Dependecies
-* [Python >=3.6](https://www.python.org) 
+* [Python >=3.6](https://www.python.org)
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
 * [Requests](https://2.python-requests.org/en/master/)
 
@@ -51,7 +51,7 @@ high
 #### Intraday price
 
 To get intraday prices, use the `Intraday()` method. By default the price interval is `1m`. Other values include `2m`, `5m`,
-`10m`, `15m`, `30m`, `60m` and `90m`. As of this writing, Yahoo Finance keeps the last 29 days of `1m` intervals. 
+`10m`, `15m`, `30m`, `60m` and `90m`. As of this writing, Yahoo Finance keeps the last 29 days of `1m` intervals.
 ```python
 walmex = db.Intraday('walmex', '2021-01-30', '2021-02-04').show
 walmex
@@ -62,7 +62,7 @@ walmex
 #### Initialize instance
 ```python
 data = Financials()
-``` 
+```
 #### Balance Sheet
 Get the AC ("Arca Contal") Balance Sheet for 2018Q1, 2019Q1, 2020Q1 and display
 the first five rows of the DaraFrame using panda's `head()` function.
@@ -113,25 +113,24 @@ dabu is distribuited under the BSD 3-Clause License.  See the [LICENSE.txt](http
 
 Hope this package is usefull to you.  Please drop me a line with any sugestion, question or just to say hello!
 
-Carlos Crespo (carlos@dabu.io)
+Carlos Crespo (carlos@dabu.io) -->
 
 ## Español
-dabu es un paquete de python enfocado en obtener infomación bursátil de las emisoras enlistadas en la Bolsa Mexicana de Valores.  En esta
-versión la información es:
+dabu es un paquete de python enfocado en obtener información bursátil de las emisoras de capitales de la Bolsa Mexicana de Valores:
 1. Precios de mercado (De Yahoo!Finance)
 * Precio de cierre diario (AMMC)
 * Precio intradía
-2. Reportes trimestrales (De la CNBV, 2017Q1 al presente)
+2. Reportes trimestrales (CNBV, 2017Q1 al presente)
 * Balance General
 * Estado de Resultados
 * Flujos de efectivo
-    
+
 ### Instalación
 ```
 pip3 install dabu
 ```
 ### Dependencias
-* [Python 3.x](https://www.python.org) 
+* [Python 3.x](https://www.python.org)
 * [pandas](https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html)
 * [Requests](https://2.python-requests.org/en/master/)
 
@@ -157,7 +156,7 @@ Desplegara `amxl` como un DataFrame de pandas.
 
 #### Precio más alto del día de una lista de emisoras
 Puedes incluir una lista de tickers en lugar de una sola emisora.  Por default, `Precios` descarga el `Precio Ajustado` y
-lo puedes cambiar por el precio de `apertura`, `max`, `min` o `cierre`. 
+lo puedes cambiar por el precio de `apertura`, `max`, `min` o `cierre`.
 
 ```python
 maximo = db.Precios(['amxl', 'walmex', 'femsaubd'], '2021-01-20', '2021-02-04', tipo_precio='max').resultado
@@ -179,7 +178,7 @@ walmex
 #### Inicializar instancia
 ```python
 datos = Reportes()
-``` 
+```
 #### Balance General
 Vamos a decargar el Balance General de AC ("Arca Contal") del 1er trimestre de 2018, 2019 y 2020.  La información
 la desplegaremos utilizando el atributo `.head()` de pandas.
@@ -232,4 +231,3 @@ dabu es distribuido bajo la licencia BSD 3-Clause.  Lee el archivo [LICENSE.txt]
 
 Espero que este paquete te sea útil.  Porfavor escribeme cualquier sugerencia, pregunta o simplemente si quieres saludar!<br>
 **Carlos Crespo**
-    
