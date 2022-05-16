@@ -177,7 +177,7 @@ walmex
 ### Reportes trimestrales
 #### Inicializar instancia
 ```python
-estados_financieros = db.Reportes()
+datos = db.Reportes()
 ```
 #### Balance General
 Vamos a decargar el Balance General de AC ("Arca Contal") del 1er trimestre de los años 2018 al 2020.  La información
