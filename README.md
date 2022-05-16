@@ -118,7 +118,7 @@ Carlos Crespo (carlos@dabu.io) -->
 ## Español
 dabu es un paquete de python enfocado en obtener información bursátil de las emisoras de capitales de la Bolsa Mexicana de Valores:
 1. Precios de mercado (De Yahoo!Finance)
-* Precio de cierre diario (AMMC)
+* Precio de cierre diario (Apertura, Máx, Mín, Cierre)
 * Precio intradía
 2. Reportes trimestrales (CNBV, 2017Q1 al presente)
 * Balance General
@@ -177,13 +177,13 @@ walmex
 ### Reportes trimestrales
 #### Inicializar instancia
 ```python
-datos = Reportes()
+estados_financieros = db.Reportes()
 ```
 #### Balance General
-Vamos a decargar el Balance General de AC ("Arca Contal") del 1er trimestre de 2018, 2019 y 2020.  La información
+Vamos a decargar el Balance General de AC ("Arca Contal") del 1er trimestre de los años 2018 al 2020.  La información
 la desplegaremos utilizando el atributo `.head()` de pandas.
 ```python
-ac = datos.balance_g('ac', ['2017-03-31','2018-03-31', '2019-03-31', '2020-03-31'])
+ac = datos.balance('ac', ['2017-03-31','2018-03-31', '2019-03-31', '2020-03-31'])
 ac.head()
 ```
 ![ac_balac_g](https://drive.google.com/uc?export=view&id=1r3V0RAb4iDQr1dOohVHt_3ToRJkR0BwR)
@@ -215,7 +215,7 @@ income.head()
 
 ![comparar](https://drive.google.com/uc?export=view&id=1yic73CldxtfvAvE0VAbEGXv2M3wWGBE_)
 #### Other
-Puedes enlistar todas las emisoras que tienen erportes finacieros utilizando
+Puedes enlistar todas las emisoras que tienen reportes financieros utilizando
 ```python
 data.lista_emisoras
 ```
